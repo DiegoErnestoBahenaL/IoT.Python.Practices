@@ -15,8 +15,7 @@ def detect_sound():
     sound_detected = GPIO.input(SOUND_SENSOR_PIN)  # Read the digital signal
     if sound_detected == 1:
         print("Sound detected!")
-    else:
-        print("No sound detected.")
+
 
 # Main program loop
 try:
