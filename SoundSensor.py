@@ -14,19 +14,19 @@ def detect_sound():
     """Reads the digital output of the sound sensor and prints its status."""
     sound_detected = GPIO.input(SOUND_SENSOR_PIN)  # Read the digital signal
     if sound_detected == 1:
-        print("Sound detected!")
+        print("Sonido detectado.")
+    else:
+        print("No se ha detectado sonido.")
 
-
-# Main program loop
 try:
-    print("Adjust the potentiometer on your sound sensor to tune its sensitivity.")
-    print("If you see only 'Sound detected!', decrease sensitivity by turning the potentiometer counter-clockwise.")
-    print("If you see only 'No sound detected.', increase sensitivity by turning the potentiometer clockwise.")
+    print("Ajusta el potenciometro en el sensor de sonido para afinar su sensibilidad.")
+    print("Si solo ves 'Sonido detectado.', disminuye la sensibilidad girando el potenciometro en sentido contrarreloj.")
+    print("Si solo ves 'No se ha detectado sonido.', incrementa la sensibilidad girando el potenciometro en sentido horario.")
     while True:
         detect_sound()  # Check sound sensor status
-        time.sleep(1) # Small delay to prevent excessive CPU usage
-
+        time.sleep(1) 
+        
 except KeyboardInterrupt:
-    print("Program terminated by user.")
+    print("Programa termiinado por el usario.")
 finally:
     GPIO.cleanup() # Clean up GPIO settings on exit
