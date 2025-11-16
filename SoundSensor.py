@@ -24,7 +24,7 @@ try:
     print("If you see only 'No sound detected.', increase sensitivity by turning the potentiometer clockwise.")
     while True:
         detect_sound()  # Check sound sensor status
-        time.sleep(0.1) # Small delay to prevent excessive CPU usage
+        time.sleep(1) # Small delay to prevent excessive CPU usage
 
 except KeyboardInterrupt:
     print("Program terminated by user.")
