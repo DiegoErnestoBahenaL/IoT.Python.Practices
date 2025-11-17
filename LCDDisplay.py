@@ -1,4 +1,4 @@
-from RPi import GPIO          # Esto en Pi 5 en realidad viene de rpi-lgpio
+import RPi.GPIO as GPIO         # Esto en Pi 5 en realidad viene de rpi-lgpio
 from RPLCD.gpio import CharLCD
 import time
 
