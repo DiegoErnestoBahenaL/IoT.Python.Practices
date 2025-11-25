@@ -116,10 +116,13 @@ def main():
     motor = Stepper28BYJ48(PINS, mode='half')  # steps_per_rev por defecto
 
     try:
-        print("Ejemplo: 1 vuelta horario @12 RPM")
+        print("Ejemplo: 2 vueltas horario @12 RPM")
         motor.set_speed(12)
-        motor.rotate(1, direction=1)
+        motor.rotate(2, direction=1)
 
+        print("Ejemplo: 2 vueltas anti-horario @12 RPM")
+        motor.set_speed(12)
+        motor.rotate(2, direction=-1)
 
 
         print("Listo.")
