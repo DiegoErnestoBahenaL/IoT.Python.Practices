@@ -5,7 +5,7 @@ import time
 GPIO.setmode(GPIO.BCM)
 
 # Define the GPIO pin connected to the sensor's digital output
-SOUND_SENSOR_PIN = 4  # Adjust this to your chosen GPIO pin
+SOUND_SENSOR_PIN = 14  # Adjust this to your chosen GPIO pin
 
 # Set up the GPIO pin as an input with a pull-down resistor
 GPIO.setup(SOUND_SENSOR_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
