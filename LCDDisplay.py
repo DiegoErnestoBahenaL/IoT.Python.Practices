@@ -15,7 +15,7 @@ lcd = LiquidCrystal(
 try:
     lcd.begin(16, 2)     # 16x2
     lcd.clear()
-    lcd.print("Hola, Diego!")
+    lcd.print("Hola, Diegoooooooooo000!")
     lcd.setCursor(0, 1)  # columna 0, fila 1
     lcd.print("Port OK :)")
 
