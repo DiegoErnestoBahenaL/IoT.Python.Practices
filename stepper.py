@@ -120,13 +120,7 @@ def main():
         motor.set_speed(12)
         motor.rotate(1, direction=1)
 
-        print("Ejemplo: 90° antihorario @8 RPM")
-        motor.set_speed(8)
-        motor.angle(90, direction=-1)
 
-        print("Ejemplo: 512 pasos horario @15 RPM")
-        motor.set_speed(15)
-        motor.step(512, direction=1)
 
         print("Listo.")
     except KeyboardInterrupt:
