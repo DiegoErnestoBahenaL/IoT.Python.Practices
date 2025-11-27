@@ -28,7 +28,7 @@ try:
 
     while True:
 
-        if (GPIO.input(OUT_PIN)):
+        if (GPIO.input(OUT_PIN) == True):
             print("Color azul detectado!")   
 
         time.sleep(0.5)
