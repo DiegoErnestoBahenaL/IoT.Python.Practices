@@ -1,10 +1,10 @@
 import RPi.GPIO as GPIO
 import time
 
-# Pines BCM de la Raspberry Pi 5
-S3_PIN  = 17   # S3 del TCS230
-S2_PIN  = 27   # S2 del TCS230
-OUT_PIN = 22   # OUT del TCS230
+# Pines BCM de la Raspberry Pi 5 (recomendados de uso general)
+S3_PIN  = 24   # S3 del TCS230  (pin físico 18)
+S2_PIN  = 23   # S2 del TCS230  (pin físico 16)
+OUT_PIN = 25   # OUT del TCS230 (pin físico 22)
 
 # Configuración inicial de GPIO
 GPIO.setmode(GPIO.BCM)
