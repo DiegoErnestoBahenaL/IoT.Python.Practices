@@ -13,7 +13,7 @@ GPIO.setup(HUMIDITY_SENSOR_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 def detect_humidity():
     """Reads the digital output of the humidity sensor and prints its status."""
     humidity_detected = GPIO.input(HUMIDITY_SENSOR_PIN)  # Read the digital signal
-    if humidity_detected == 1:
+    if humidity_detected == 0:
         print("Humedad detectada.")
      
 
