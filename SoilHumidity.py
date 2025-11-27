@@ -11,17 +11,17 @@ HUMIDITY_SENSOR_PIN = 14  # Adjust this to your chosen GPIO pin
 GPIO.setup(HUMIDITY_SENSOR_PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 def detect_humidity():
-    """Reads the digital output of the sound sensor and prints its status."""
+    """Reads the digital output of the humidity sensor and prints its status."""
     humidity_detected = GPIO.input(HUMIDITY_SENSOR_PIN)  # Read the digital signal
     if humidity_detected == 1:
-        print("Sonido detectado.")
+        print("Humedad detectada.")
      
 
 try:
     print("Ajusta el potenciometro en el sensor de humedad para afinar su sensibilidad.")
 
     while True:
-        detect_humidity()  # Check sound sensor status
+        detect_humidity()  # Check humidity sensor status
         time.sleep(0.1) 
         
 except KeyboardInterrupt:
