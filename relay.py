@@ -15,7 +15,7 @@ try:
 
     while True:
 
-        GPIO.output(RELAY_PIN, True)
+        GPIO.output(RELAY_PIN, output)
         output = not output
         
         time.sleep(1.5)
