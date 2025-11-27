@@ -18,14 +18,18 @@ def calibrate_red():
     GPIO.output(S2_PIN, False)
     GPIO.output(S3_PIN, False)
 
+def calibrate_blue():
+    GPIO.output(S2_PIN, False)
+    GPIO.output(S3_PIN, True)
+
 try:
 
-    calibrate_red()
+    calibrate_blue()
 
     while True:
 
         if (GPIO.input(OUT_PIN)):
-            print("Color rojo detectado!")   
+            print("Color azul detectado!")   
 
         time.sleep(0.5)
 
